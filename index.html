@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Quiz: Descubra o Seu Estilo Primata!</title>
+    <title>Quiz: Descubra o Seu Estilo Primata</title>
+    <!-- Adicionado ?v=2 para forçar o navegador a recarregar o CSS sem usar cache antigo -->
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
     <div class="caixa-principal">
-        <h1>Qual espécie de macaco você seria?</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
+        <header class="cabecalho">
+            <span class="icone-selva">🐒🌴</span>
+            <h1>Qual espécie de macaco você seria?</h1>
+            <p class="subtitulo">Responda às 10 perguntas e descubra seu perfil selvagem!</p>
+        </header>
+
+        <div class="barra-progresso-container">
+            <div class="barra-progresso-preenchimento" id="barra-progresso"></div>
         </div>
+
+        <main class="conteudo-quiz">
+            <div class="caixa-perguntas"></div>
+            <div class="caixa-alternativas"></div>
+            <div class="caixa-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </main>
     </div>
-    <script src="script.js"></script>
+
+    <script src="script.js?v=2"></script>
 </body>
 </html>
