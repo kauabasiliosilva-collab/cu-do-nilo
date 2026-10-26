@@ -1,14 +1,13 @@
-/* Palette: Selva & Tons de Madeira / Marrom */
+/* Paleta Selva & Tons Amadeirados */
 :root {
-    --verde-escuro: #1b3b2b;
+    --verde-floresta: #1b3b2b;
     --verde-folha: #2d5a27;
     --marrom-tronco: #3d2314;
-    --marrom-claro: #6e472a;
-    --amarelo-dourado: #d4a359;
-    --creme-fundo: #f5eedc;
-    --creme-card: #fdfaf3;
+    --marrom-madeira: #5c3822;
+    --marrom-terra: #8c5a38;
+    --creme-fundo: #f4ebd9;
+    --creme-card: #fdfbf7;
     --texto-escuro: #231810;
-    --sombra: rgba(27, 59, 43, 0.15);
 }
 
 * {
@@ -19,9 +18,8 @@
 }
 
 body {
-    background-color: var(--verde-escuro);
-    /* Fundo degradê remetendo à copa de árvores e terra */
-    background-image: radial-gradient(circle at 50% 20%, #2a4e3a 0%, var(--verde-escuro) 80%);
+    background-color: var(--verde-floresta) !important;
+    background-image: radial-gradient(circle at 50% 20%, #2b543d 0%, var(--verde-floresta) 85%) !important;
     color: var(--texto-escuro);
     min-height: 100vh;
     display: flex;
@@ -35,9 +33,9 @@ body {
     border: 4px solid var(--marrom-tronco);
     border-radius: 20px;
     width: 100%;
-    max-width: 650px;
-    padding: 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-width: 680px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .cabecalho {
@@ -58,20 +56,20 @@ h1 {
 }
 
 .subtitulo {
-    color: var(--marrom-claro);
+    color: var(--marrom-terra);
     font-size: 0.95rem;
     font-weight: 600;
 }
 
-/* Barra de Progresso Verde Selva */
+/* Barra de Progresso */
 .barra-progresso-container {
     width: 100%;
-    height: 10px;
-    background-color: #e0d7c3;
-    border-radius: 5px;
+    height: 12px;
+    background-color: #e2d7c1;
+    border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 25px;
-    border: 1px solid var(--marrom-claro);
+    margin-bottom: 22px;
+    border: 1px solid var(--marrom-terra);
 }
 
 .barra-progresso-preenchimento {
@@ -83,7 +81,7 @@ h1 {
 
 /* Caixa das Perguntas */
 .caixa-perguntas {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--marrom-tronco);
     margin-bottom: 20px;
@@ -92,38 +90,34 @@ h1 {
     padding: 18px;
     border-left: 6px solid var(--verde-folha);
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Alternativas / Botões */
+/* 4 Alternativas */
 .caixa-alternativas {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 button {
     background-color: var(--creme-card);
     color: var(--marrom-tronco);
-    border: 2px solid var(--marrom-claro);
-    padding: 14px 18px;
-    border-radius: 12px;
-    font-size: 1rem;
+    border: 2px solid var(--marrom-terra);
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
     text-align: left;
     transition: all 0.2s ease;
-    box-shadow: 0 3px 6px var(--sombra);
 }
 
 button:hover {
-    background-color: var(--marrom-claro);
+    background-color: var(--marrom-madeira);
     color: #ffffff;
     border-color: var(--marrom-tronco);
     transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
 }
 
 /* Botão de Recomeçar */
@@ -131,12 +125,29 @@ button:active {
     background-color: var(--verde-folha);
     color: #ffffff;
     text-align: center;
-    border: 2px solid var(--verde-escuro);
+    border: 2px solid var(--verde-floresta);
     font-size: 1.1rem;
-    padding: 16px;
+    padding: 15px;
     margin-top: 15px;
 }
 
 .caixa-alternativas button.botao-recomecar:hover {
-    background-color: var(--verde-escuro);
-    color: var
+    background-color: var(--verde-floresta);
+    color: #ffd89b;
+}
+
+/* Resultado Final */
+.texto-resultado {
+    font-size: 0.95rem;
+    color: var(--texto-escuro);
+    line-height: 1.5;
+    background-color: var(--creme-card);
+    padding: 18px;
+    border-radius: 10px;
+    border: 2px dashed var(--marrom-terra);
+    white-space: pre-line;
+}
+
+.texto-resultado:empty {
+    display: none;
+}
