@@ -6,75 +6,135 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "1. Como é seu comportamento em grupo e com seus amigos?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                texto: "Gosto de viver em comunidades tranquilas, pacifistas e resolver tudo com carinho.",
+                afirmacao: "Você tem a alma pacífica e acolhedora de um Bonobo."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
-            }           
-            
-        ]
-    },
-    {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
-        alternativas: [
-            {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                texto: "Sou um líder natural, protetor e bastante impetuoso quando defendendo quem amo.",
+                afirmacao: "Sua força e instinto de liderança lembram o poderoso Gorila-das-montanhas."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "2. Qual é a sua habilidade especial na hora de resolver problemas do dia a dia?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "Uso ferramentas, improviso e penso rápido para encontrar soluções criativas.",
+                afirmacao: "Sua inteligência e capacidade de usar ferramentas são dignas de um Macaco-Prego."
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                texto: "Sou observador, me movo com calma e prefiro não me envolver em confusões.",
+                afirmacao: "Sua natureza observadora e focada se assemelha à de um Orangotango."
             }
-            
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "3. Qual é o seu habitat ideal para relaxar?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                texto: "No alto das árvores, com uma vista bem ampla e com bastante agilidade para me mover.",
+                afirmacao: "Seu estilo ágil e aéreo lembra a graciosidade do Macaco-Aranha."
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "Relaxando em fontes térmicas de água quente, sem passar nenhum frio.",
+                afirmacao: "Seu amor pelo conforto e pelo frio ameno faz de você um autêntico Macaco-do-Japão (Macaco-das-neves)."
             }
-            
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "4. Como você se expressa quando quer ser ouvido?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Falo alto, me faço notar de longe para garantir que todos ouçam meu recado.",
+                afirmacao: "Sua voz potente e presença marcante ecoam como o grito de um Bugio (Macaco-Uivador)."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Comuniquei-me de forma sutil, usando gestos e olhares discretos.",
+                afirmacao: "Sua comunicação expressiva e elegante lembra o Sagui-imperador."
             }
-            
-            
         ]
     },
+    {
+        enunciado: "5. Sobre o seu visual e estilo pessoal:",
+        alternativas: [
+            {
+                texto: "Adoro ter algum detalhe único e extravagante (um bigode, uma juba ou cores chamativas).",
+                afirmacao: "Seu gosto por um visual marcante remete às cores exuberantes do Mandril."
+            },
+            {
+                texto: "Prefiro um visual clássico, compacto e discreto, sem chamar muita atenção.",
+                afirmacao: "Seu estilo pequeno e adorável combina perfeitamente com o Mico-leão-dourado."
+            }
+        ]
+    },
+    {
+        enunciado: "6. Qual é a sua atitude em relação à comida?",
+        alternativas: [
+            {
+                texto: "Como de tudo um pouco, adoro experimentar frutas novas e castanhas diferentes.",
+                afirmacao: "Sua dieta variada e curiosidade gastronômica são características do Chimpanzé."
+            },
+            {
+                texto: "Sou muito seletivo, prefiro folhas específicas e brotos bem frescos.",
+                afirmacao: "Seu paladar refinado e focado lembra a rotina do Colobo-guereza."
+            }
+        ]
+    },
+    {
+        enunciado: "7. Quando surge um obstáculo físico ou um desafio difícil:",
+        alternativas: [
+            {
+                texto: "Enfrento com pura agilidade e acrobacias, superando o obstáculo sem pisar no chão.",
+                afirmacao: "Sua destreza física é tão incrível quanto a de um Gibão."
+            },
+            {
+                texto: "Analiso bem a estrutura antes de dar qualquer passo longo ou arriscado.",
+                afirmacao: "Seu cuidado e precisão nos movimentos lembram o Macaco-de-Cheiro."
+            }
+        ]
+    },
+    {
+        enunciado: "8. Como você lida com visitas ou pessoas desconhecidas?",
+        alternativas: [
+            {
+                texto: "Sou muito curioso, me aproximo rapidamente para investigar tudo o que eles trazem.",
+                afirmacao: "Sua curiosidade insaciável é idêntica à do Macaco-Rhesus."
+            },
+            {
+                texto: "Sou tímido, prefiro ficar camuflado no meu canto observando à distância.",
+                afirmacao: "Seu estilo reservado e misterioso parece com o do Macaco-da-Noite."
+            }
+        ]
+    },
+    {
+        enunciado: "9. Qual destas características marcantes você mais valoriza?",
+        alternativas: [
+            {
+                texto: "Um nariz único e expressivo que destaca a minha personalidade.",
+                afirmacao: "Sua singularidade inconfundível lembra o Macaco-Narzudo."
+            },
+            {
+                texto: "Uma cabeleira/juba vistosa que me dá um ar de realeza.",
+                afirmacao: "Seu porte elegante e jubado lembra o Tamarim-de-coleira."
+            }
+        ]
+    },
+    {
+        enunciado: "10. No final do dia, o que é mais importante para você?",
+        alternativas: [
+            {
+                texto: "Estar cercado pela família e pelos amigos, cuidando uns dos outros.",
+                afirmacao: "Você coloca os laços sociais no topo de tudo, mostrando um verdadeiro espírito de bando primata!"
+            },
+            {
+                texto: "Ter o meu próprio espaço para descansar com calma e recarregar as energias.",
+                afirmacao: "Você valoriza seu espaço individual com a sabedoria dos grandes primatas solitários."
+            }
+        ]
+    }
 ];
 
 let atual = 0; 
@@ -89,6 +149,7 @@ function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
+    textoResultado.textContent = "";
     mostraAlternativas();
 }
 
@@ -109,9 +170,21 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Seu Perfil Primata Revelado:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
+
+    // Criação do Botão de Recomeçar
+    const botaoRecomecar = document.createElement("button");
+    botaoRecomecar.textContent = "Jogar Novamente";
+    botaoRecomecar.addEventListener("click", reiniciaJogo);
+    caixaAlternativas.appendChild(botaoRecomecar);
+}
+
+function reiniciaJogo() {
+    atual = 0;
+    historiaFinal = "";
+    mostraPergunta();
 }
 
 mostraPergunta();
